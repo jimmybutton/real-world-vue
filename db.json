@@ -14,8 +14,14 @@
       "date": "2019-01-03T21:54:00.000Z",
       "time": "2:00",
       "attendees": [
-        { "id": "abc123", "name": "Adam Jahr" },
-        { "id": "def456", "name": "Gregg Pollack" }
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "def456",
+          "name": "Gregg Pollack"
+        }
       ]
     },
     {
@@ -46,6 +52,34 @@
       "location": "Puptown ",
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 808741,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "food",
+      "title": "Is it working?",
+      "description": "asdf",
+      "location": "Sierra",
+      "date": "2020-04-02T20:15:00.000Z",
+      "time": "17:00",
+      "attendees": []
+    },
+    {
+      "id": 670390,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "nature",
+      "title": "Plant Trees",
+      "description": "We're gonna plant some trees!",
+      "location": "Lehnitz",
+      "date": "2020-04-10T20:23:00.000Z",
+      "time": "14:00",
       "attendees": []
     }
   ]
