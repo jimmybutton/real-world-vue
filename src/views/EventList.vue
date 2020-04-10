@@ -41,6 +41,7 @@ function getPageEvents(routeTo, next) {
 }
 
 export default {
+  name: 'EventList',
   props: {
     page: {
       type: Number,
