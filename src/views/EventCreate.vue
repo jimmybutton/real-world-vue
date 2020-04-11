@@ -111,6 +111,20 @@ import Datepicker from 'vuejs-datepicker'
 import NProgress from 'nprogress'
 import { required } from 'vuelidate/lib/validators'
 
+// monkey patch for Datepicker to insert opened event listener
+// https://github.com/charliekassel/vuejs-datepicker/issues/777
+Datepicker.methods.showCalendar = function() {
+  if (this.disabled || this.isInline) {
+    return false
+  }
+  if (this.isOpen) {
+    return this.close(true)
+  } else if (!this.isInline) {
+    this.$emit('opened')
+  }
+  this.setInitialView()
+}
+
 export default {
   name: 'EventCreate',
   components: {
